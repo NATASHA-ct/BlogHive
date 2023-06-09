@@ -4,7 +4,7 @@
           <header class="header">
             <div class="header-text">
               <h1>The BlogHive</h1>
-              <h4>Home of verified news...</h4>
+              <h4>Home of Whispered Words:Dive into the Secrets of the Mind & Ignite your Imagination......!</h4>
             </div>
             <div class="overlay"></div>
 
@@ -37,7 +37,7 @@
                 <a href=""><i class="fab fa-twitter"></i></a>
               </div>
 
-              <small>2024 Natasha Blog</small>
+              <small>The BlogHive</small>
             </footer>
           </div>
           <!-- Menu Button -->
@@ -55,7 +55,7 @@
               <a href=""><i class="fab fa-instagram"></i></a>
               <a href=""><i class="fab fa-twitter"></i></a>
             </div>
-            <small> 2024 Natasha</small>
+            <small> Created by @Natasha Tatenda Chirombe</small>
           </footer>
         </div>
 

@@ -1,7 +1,5 @@
 <template>
     <div>
-        <h2>THIS IS HOMEPAGE</h2>
-
           <h2 class="header-title">Latest Blog Posts</h2>
             <section class="cards-blog latest-blog">
               <div class="card-blog-content">
