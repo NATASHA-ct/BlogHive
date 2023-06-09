@@ -28,7 +28,7 @@ img {
 
 .container {
   background-color: #00000080;
-  padding:1em;
+
 }
 
 /* Scrollbar */
@@ -49,7 +49,7 @@ img {
 
 .header {
   background-image: url("images/photography.jpg");
-  height:80vh;
+  height:60vh;
   background-size: cover;
   background-position: center;
   display: flex;
