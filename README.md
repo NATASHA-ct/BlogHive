@@ -1,3 +1,7 @@
+# BlogHive APP
+
+### BlogHive is a web application that allows users to create and manage their own personal blogs. Built with Laravel and Vue.js, it provides a user-friendly platform for bloggers to write, publish, and share their articles. The app includes features like user authentication, article creation, and a seamless frontend-backend interaction.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -64,4 +68,4 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# BlogHive
+
