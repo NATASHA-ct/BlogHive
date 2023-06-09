@@ -31,7 +31,7 @@
                 <a href=""><i class="fab fa-twitter"></i></a>
               </div>
 
-              <small>2021 Natasha Blog</small>
+              <small>2024 Natasha Blog</small>
             </footer>
           </div>
           <!-- Menu Button -->
@@ -43,6 +43,8 @@
           <!-- main -->
           <main class="container">
             <!-- CHANGES WITH PAGE -->
+            <!-- router view checks if the route entered by user exist in the router js -->
+            <router-view></router-view>
           </main>
 
           <!-- Main footer -->
@@ -52,7 +54,7 @@
               <a href=""><i class="fab fa-instagram"></i></a>
               <a href=""><i class="fab fa-twitter"></i></a>
             </div>
-            <small> 2023 Natasha</small>
+            <small> 2024 Natasha</small>
           </footer>
         </div>
 
