@@ -7,8 +7,14 @@
               <h4>Home of verified news...</h4>
             </div>
             <div class="overlay"></div>
-          </header>
 
+             
+          </header>
+          <main class="container">
+                    <!-- CHANGES WITH PAGE -->
+                    <!-- router view checks if the route entered by user exist in the router js -->
+                    <router-view></router-view>
+          </main>
           <!-- sidebar -->
           <div class="sidebar">
             <span class="closeButton">&times;</span>
@@ -16,10 +22,10 @@
 
             <div class="side-links">
               <ul>
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><router-link :to="{ name: 'Home' }">Home</router-link></li>
+                <li><router-link :to="{ name: 'Blogs' }">Blog</router-link></li>
+                <li><router-link :to="{ name: 'About' }">About</router-link></li>
+                <li><router-link :to="{ name: 'Contact' }">Contact</router-link></li>
               </ul>
             </div>
 
@@ -41,12 +47,7 @@
             <div class="bar"></div>
           </div>
           <!-- main -->
-          <main class="container">
-            <!-- CHANGES WITH PAGE -->
-            <!-- router view checks if the route entered by user exist in the router js -->
-            <router-view></router-view>
-          </main>
-
+         
           <!-- Main footer -->
           <footer class="main-footer">
             <div>
