@@ -29,7 +29,7 @@ const routes = [
     },
     {
         path: "/blogs/:slug",
-        name: "Blog",
+        name: "BlogPage",
         component: BlogPage,
         props: true,
     },
