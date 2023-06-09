@@ -280,7 +280,7 @@ footer small {
 /* Single Blog */
 .single-blog-post h1 {
   text-align: center;
-  margin: 80px 0 40px 0;
+  margin: 1em 0 2em 0;
   font-size: 30px;
   font-weight: 400;
   text-transform: capitalize;
@@ -351,7 +351,7 @@ footer small {
 /* Contact */
 #contact-us h1 {
   text-align: center;
-  margin: 80px 0 40px 0;
+  margin: 1em 0 2em 0;
   font-size: 30px;
   font-weight: 400;
 }
@@ -432,6 +432,16 @@ textarea {
 
 #contact-us input[type="submit"]:hover {
   transform: translateY(-4px);
+}
+
+.router-link-active {
+   border: 2px solid rgb(199, 99, 81);
+   border-top: none;
+
+    /* background-color: orangered; */
+    color: #fff;
+    padding: 3px 15px;
+    border-radius: 3px;
 }
 
 /* Medium devices and below */

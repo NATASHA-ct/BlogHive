@@ -1,8 +1,6 @@
 <template>
     <div>
-        <h2>THIS IS for single blog</h2>
-
-         <section class="single-blog-post">
+        <section class="single-blog-post">
             <h1>Benefits of paul's photography</h1>
 
             <p class="time-and-author">
@@ -11,7 +9,7 @@
             </p>
 
             <div class="single-blog-post-ContentImage" data-aos="fade-left">
-              <img src="images/pic1.jpg" alt="" />
+              <img src="/images/pic1.jpg" alt="" />
             </div>
 
             <div class="about-text">
@@ -44,7 +42,7 @@
             <div class="recommended-cards">
               <a href="">
                 <div class="recommended-card">
-                  <img src="images/pic5.jpg" alt="" loading="lazy" />
+                  <img src="/images/pic5.jpg" alt="" loading="lazy" />
                   <h4>
                     12 Health Benefits Of Pomegranate Fruit
                   </h4>
@@ -52,7 +50,7 @@
               </a>
               <a href="">
                 <div class="recommended-card">
-                  <img src="images/pushups.jpg" alt="" loading="lazy" />
+                  <img src="/images/pushups.jpg" alt="" loading="lazy" />
                   <h4>
                     The Truth About Pushups
                   </h4>
@@ -60,7 +58,7 @@
               </a>
               <a href="">
                 <div class="recommended-card">
-                  <img src="images/smoothies.jpg" alt="" loading="lazy" />
+                  <img src="/images/smoothies.jpg" alt="" loading="lazy" />
                   <h4>
                     Healthy Smoothies
                   </h4>
