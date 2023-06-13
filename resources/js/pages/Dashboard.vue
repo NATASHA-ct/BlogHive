@@ -1,8 +1,6 @@
 <template>
     <div id="backend-view">
-        <div class="logout"><a href="#"
-            
-             >Log out</a></div>
+        <div class="logout"><a href="#" @click="logout">Log out</a></div>
         <h1 class="heading">Dashboard</h1>
         <!-- <span>Hi {{ name }}!</span> -->
         <!-- <div class="links">
@@ -24,7 +22,7 @@
     </div>
 </template>
 
-<!-- <script>
+<script>
 export default {
     data() {
         return {
@@ -57,7 +55,7 @@ export default {
         },
     },
 };
-</script> -->
+</script>
 
 <style scoped>
 /* dashboard */
