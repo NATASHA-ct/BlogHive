@@ -28,6 +28,7 @@
                 <li><router-link :to="{ name: 'Contact' }" @click="hideOverlay">Contact</router-link></li>
                 <li><router-link :to="{ name: 'Login' }" @click="hideOverlay">Login</router-link></li>
                 <li><router-link :to="{ name: 'Register' }" @click="hideOverlay">Register</router-link></li>
+                <li><router-link :to="{ name: 'Dashboard' }" @click="hideOverlay">Dashboard</router-link></li>
               </ul>
             </div>
 

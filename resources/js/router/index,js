@@ -7,6 +7,7 @@ import Contact from "../pages/Contact.vue";
 import BlogPage from "../pages/BlogPage.vue";
 import Register from "../pages/Register.vue";
 import Login from "../pages/Login.Vue";
+import Dashboard from "../pages/Dashboard.vue";
 
 const routes = [
     {
@@ -44,6 +45,11 @@ const routes = [
         path: "/register",
         name: "Register",
         component: Register,
+    },
+    {
+        path: "/dashboard",
+        name: "Dashboard",
+        component: Dashboard,
     },
 ];
 

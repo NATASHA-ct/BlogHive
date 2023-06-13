@@ -40,8 +40,9 @@ export default {
                 })
                 .catch((error) => {
                     this.errors = error.response.data.errors;
-                });
+                }); console.log(this.fields);
         },
+       
     },
 };
 </script>
@@ -49,7 +50,7 @@ export default {
 <style scoped>
 #backend-view {
     /* height: 100vh; */
-    background-color: #f3f4f6;
+    background-color: #00000080;
     display: grid;
     align-items: center;
     padding: 3em;
