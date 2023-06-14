@@ -6,14 +6,14 @@ import Blogs from "../pages/Blogs.vue";
 import Contact from "../pages/Contact.vue";
 import BlogPage from "../pages/BlogPage.vue";
 import Register from "../pages/Register.vue";
-import Login from "../pages/Login.Vue";
+import Login from "../pages/Login.vue";
 import Dashboard from "../pages/Dashboard.vue";
-// import CreateCategories from "../pages/categories/CreateCategories.vue";
-// import CategoriesList from "../pages/categories/CategoriesList.vue";
-// import EditCategories from "../pages/categories/EditCategories.vue";
-// import CreatePosts from "../pages/posts/CreatePosts.vue";
-// import DashboardPostsList from "../pages/posts/DashboardPostsList.vue";
-// import EditPosts from "../pages/posts/EditPosts.vue";
+import CreateCategories from "../pages/categories/CreateCategories.vue";
+import CategoriesList from "../pages/categories/CategoriesList.vue";
+import EditCategories from "../pages/categories/EditCategories.vue";
+import CreatePosts from "../pages/allposts/CreatePosts.vue";
+import DashboardPostsList from "../pages/allposts/DashboardPostsList.vue";
+import EditPosts from "../pages/allposts/EditPosts.vue";
 
 const routes = [
     {
@@ -27,7 +27,7 @@ const routes = [
         component: About,
     },
     {
-        path: "/blogs",
+        path: "/posts",
         name: "Blogs",
         component: Blogs,
     },
@@ -37,7 +37,7 @@ const routes = [
         component: Contact,
     },
     {
-        path: "/blogs/:slug",
+        path: "/posts/:slug",
         name: "BlogPage",
         component: BlogPage,
         props: true,
@@ -57,44 +57,44 @@ const routes = [
         name: "Dashboard",
         component: Dashboard,
     },
-    // {
-    //     path: "/categories/create",
-    //     name: "CreateCategories",
-    //     component: CreateCategories,
-    //     meta: { requiresAuth: true },
-    // },
-    // {
-    //     path: "/categories",
-    //     name: "CategoriesList",
-    //     component: CategoriesList,
-    //     meta: { requiresAuth: true },
-    // },
-    // {
-    //     path: "/categories/:id/edit",
-    //     name: "EditCategories",
-    //     component: EditCategories,
-    //     meta: { requiresAuth: true },
-    //     props: true,
-    // },
-    // {
-    //     path: "/posts/create",
-    //     name: "CreatePosts",
-    //     component: CreatePosts,
-    //     meta: { requiresAuth: true },
-    // },
-    // {
-    //     path: "/dashboard-posts",
-    //     name: "DashboardPostsList",
-    //     component: DashboardPostsList,
-    //     meta: { requiresAuth: true },
-    // },
-    // {
-    //     path: "/posts/:slug/edit",
-    //     name: "EditPosts",
-    //     component: EditPosts,
-    //     meta: { requiresAuth: true },
-    //     props: true,
-    // },
+    {
+        path: "/categories/create",
+        name: "CreateCategories",
+        component: CreateCategories,
+        meta: { requiresAuth: true },
+    },
+    {
+        path: "/categories",
+        name: "CategoriesList",
+        component: CategoriesList,
+        meta: { requiresAuth: true },
+    },
+    {
+        path: "/categories/:id/edit",
+        name: "EditCategories",
+        component: EditCategories,
+        meta: { requiresAuth: true },
+        props: true,
+    },
+    {
+        path: "/posts/create",
+        name: "CreatePosts",
+        component: CreatePosts,
+        meta: { requiresAuth: true },
+    },
+    {
+        path: "/dashboard-posts",
+        name: "DashboardPostsList",
+        component: DashboardPostsList,
+        meta: { requiresAuth: true },
+    },
+    {
+        path: "/posts/:slug/edit",
+        name: "EditPosts",
+        component: EditPosts,
+        meta: { requiresAuth: true },
+        props: true,
+    },
 ];
 
 const router = createRouter({

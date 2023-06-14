@@ -1,36 +1,59 @@
 <template>
    <div id="wrapper">
           <!-- header -->
-          <header class="header">
-            <div class="header-text">
-              <h1>The BlogHive</h1>
-              <h4>Home of Whispered Words:Dive into the Secrets of the Mind & Ignite your Imagination......!</h4>
-            </div>
-            <div class="overlay"></div>
-
-             
-          </header>
           <main class="container">
-                    <!-- CHANGES WITH PAGE -->
-                    <!-- router view checks if the route entered by user exist in the router js -->
-                    <router-view></router-view>
+            <router-view
+            @update-sidebar="updateSidebar"
+            @show-edit-success="showEditSuccess"
+            :editSuccess="editSuccess"
+            :key="$route.path"
+          ></router-view>
           </main>
           <!-- sidebar -->
           <div class="sidebar" :class="{showOverlay: overlayVisibility}">
             <span class="closeButton" @click="hideOverlay" >&times;</span>
             <p class="brand-title"><a href="">BlogHive</a></p>
 
-            <div class="side-links">
-              <ul>
-                <li><router-link :to="{ name: 'Home' }" @click="hideOverlay">Home</router-link></li>
-                <li><router-link :to="{ name: 'Blogs' }" @click="hideOverlay">Blog</router-link></li>
-                <li><router-link :to="{ name: 'About' }" @click="hideOverlay">About</router-link></li>
-                <li><router-link :to="{ name: 'Contact' }" @click="hideOverlay">Contact</router-link></li>
-                <li><router-link :to="{ name: 'Login' }" @click="hideOverlay">Login</router-link></li>
-                <li><router-link :to="{ name: 'Register' }" @click="hideOverlay">Register</router-link></li>
-                <li><router-link :to="{ name: 'Dashboard' }" @click="hideOverlay">Dashboard</router-link></li>
-              </ul>
-            </div>
+          <div class="side-links">
+          <ul>
+            <li>
+              <router-link @click="hideOverlay" :to="{ name: 'Home' }"
+                >Home</router-link
+              >
+            </li>
+            <li>
+              <router-link @click="hideOverlay" :to="{ name: 'Blogs' }"
+                >Blogs</router-link
+              >
+            </li>
+            <li>
+              <router-link @click="hideOverlay" :to="{ name: 'About' }"
+                >About</router-link
+              >
+            </li>
+            <li>
+              <router-link @click="hideOverlay" :to="{ name: 'Contact' }"
+                >Contact</router-link
+              >
+            </li>
+            <li v-if="!loggedIn">
+              <router-link @click="hideOverlay" :to="{ name: 'Register' }"
+                >Register</router-link
+              >
+            </li>
+            <li v-if="!loggedIn">
+              <router-link @click="hideOverlay" :to="{ name: 'Login' }"
+                >Login</router-link
+              >
+            </li>
+            <li v-if="loggedIn">
+              <router-link @click="hideOverlay" :to="{ name: 'Dashboard' }"
+                >Dashboard</router-link
+              >
+            </li>
+          </ul>
+        </div>
+
 
             <!-- sidebar footer -->
             <footer class="sidebar-footer">
@@ -50,7 +73,7 @@
             <div class="bar"></div>
           </div>
           <!-- main -->
-         
+      
           <!-- Main footer -->
           <footer class="main-footer">
             <div>
@@ -66,20 +89,35 @@
 
 <script>
 export default {
-  data(){
-    return{
-      overlayVisibility:true,
-    }
+  data() {
+    return {
+      overlayVisibility: false,
+      loggedIn: false,
+      editSuccess: false,
+    };
   },
-  methods:{
-    showOverlay(){
+ methods: {
+    ShowOverlay() {
       this.overlayVisibility = true;
     },
-    hideOverlay(){
+    hideOverlay() {
       this.overlayVisibility = false;
+    },
+    updateSidebar() {
+      this.loggedIn = !this.loggedIn;
+    },
+    showEditSuccess() {
+      this.editSuccess = true;
+    },
+  },
+  mounted() {
+    if (localStorage.getItem("authenticated")) {
+      this.loggedIn = true;
+    } else {
+      this.loggedIn = false;
     }
-  }
-}
+  },
+};
 </script>
 
 <style scoped>

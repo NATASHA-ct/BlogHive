@@ -12,7 +12,7 @@ body {
 }
 
 #wrapper {
-    margin-left: 300px;
+    margin-left: 12em;
     overflow-x: hidden;
 }
 
@@ -48,7 +48,7 @@ img {
 
 .header {
     background-image: url("images/photography.jpg");
-    height: 100vh;
+    height: 60vh;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -88,7 +88,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    width: 300px;
+    width: 12em;
     background-color: black;
     height: 100vh;
     transition: 0.5s;

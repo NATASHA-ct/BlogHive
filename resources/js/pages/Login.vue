@@ -11,7 +11,9 @@
             <span v-if="errors.password" class="error">{{ errors.password[0] }}</span>
 
             <button type="submit">Log In</button>
-            <span>Don't have an account? <a href="">Sign up</a></span>
+            <span>Don't have an account? <router-link @click="hideOverlay" :to="{ name: 'Register' }"
+                    >Sign up</router-link
+                  ></span>
         </form>
     </div>
 </template>

@@ -2,8 +2,8 @@
     <div id="backend-view">
         <div class="logout"><a href="#" @click="logout">Log out</a></div>
         <h1 class="heading">Dashboard</h1>
-        <!-- <span>Hi {{ name }}!</span> -->
-        <!-- <div class="links">
+        <span>Hi {{ name }}!</span>
+        <div class="links">
             <ul>
                 <li>
                     <router-link :to="{ name: 'CreatePosts' }">Create Posts</router-link>
@@ -18,7 +18,7 @@
                     <router-link :to="{ name: 'CategoriesList' }">Categories List</router-link>
                 </li>
             </ul>
-        </div> -->
+        </div>
     </div>
 </template>
 
@@ -70,6 +70,9 @@ export default {
     position: absolute;
     top: 30px;
     right: 40px;
+    padding: 0.5em;
+    background: #000;
+    border-radius: 15px;
 }
 
 .heading {
